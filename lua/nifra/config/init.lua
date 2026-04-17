@@ -1,0 +1,6 @@
+require("nifra.config.global")
+require("nifra.config.options")
+require("nifra.config.diagnostic")
+require("nifra.config.lsp")
+require("nifra.config.keymaps")
+require("nifra.config.autocommands")
