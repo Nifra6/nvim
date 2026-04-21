@@ -3,6 +3,9 @@ local opts = { noremap = true, silent = true }
 
 -- NOTE: Open Lazy
 map("n", "<leader>lv", "<Cmd>Lazy<CR>", { desc = "Lazy[V]im" })
+map("n", "<leader>lu", function()
+    vim.pack.update()
+end, { desc = "[U]pdate plugins" })
 
 -- NOTE: Use CTRL+<hjkl> to switch between windows
 map("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
