@@ -20,12 +20,16 @@ local function get_kitty_theme()
     return nil
 end
 
+-- Get local kitten theme
 local kitty_theme = get_kitty_theme()
+local theme_is_tokyonight = kitty_theme == "Tokyo Night Day" or kitty_theme == "Tokyo Nifra Day"
+local theme_is_catppuccin = kitty_theme == "Catppuccin-Latte"
+
 require("tokyonight").setup({
-    transparent = kitty_theme == "Tokyo Night Day" or kitty_theme == "Tokyo Nifra Day",
+    transparent = theme_is_tokyonight,
 })
 require("catppuccin").setup({
-    transparent_background = kitty_theme == "Catppuccin-Latte",
+    transparent_background = theme_is_catppuccin,
     integrations = {
         markview = true,
         blink_cmp = true,
@@ -42,5 +46,8 @@ require("catppuccin").setup({
 })
 vim.g.everforest_transparent_background = 0
 
--- vim.cmd.colorscheme("tokyonight-day")
-vim.cmd.colorscheme("catppuccin")
+if theme_is_tokyonight then
+    vim.cmd.colorscheme("tokyonight-day")
+else
+    vim.cmd.colorscheme("catppuccin")
+end
