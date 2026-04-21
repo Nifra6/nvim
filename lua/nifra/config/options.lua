@@ -54,3 +54,7 @@ opt.inccommand = "split"
 -- NOTE: Local config
 opt.exrc = true
 opt.secure = true
+
+-- NOTE: Use true colors
+opt.background = "light"
+opt.termguicolors = true
