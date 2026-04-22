@@ -20,7 +20,7 @@ require("snacks").setup({
     notifier = {},
     scope = {},
     terminal = {},
-    image = { enabled = false },
+    image = {},
     dashboard = {
         enabled = true,
         width = 40,
