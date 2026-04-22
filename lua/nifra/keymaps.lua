@@ -2,7 +2,6 @@ local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- NOTE: Open Lazy
-map("n", "<leader>lv", "<Cmd>Lazy<CR>", { desc = "Lazy[V]im" })
 map("n", "<leader>lu", function()
     vim.pack.update()
 end, { desc = "[U]pdate plugins" })
