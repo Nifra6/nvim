@@ -10,4 +10,5 @@ require("noice").setup({
         command_palette = true, -- Command line at the top
         lsp_doc_border = true, -- Add border around documentation hover
     },
+    lsp = { progress = { enabled = false } }, -- Disable LSP progress messages (handled by lualine)
 })

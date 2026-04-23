@@ -20,6 +20,7 @@ require("lualine").setup({
                         return "󰙅 File Explorer"
                     end,
                 },
+                lualine_z = { { "branch", icon = "󰘬" } },
             },
             filetypes = { "snacks_picker_list" },
         }
@@ -40,7 +41,18 @@ require("lualine").setup({
             { "diagnostics", symbols = { error = "󰅙 ", warn = "󱠇 ", info = "󰋼 ", hint = "󰸥 " } },
         },
         lualine_x = { "location", "progress" },
-        lualine_y = { { "filetype", icon_only = true } },
-        lualine_z = { "branch" },
+        lualine_y = {
+            {
+                "lsp_status",
+                icon = "󰖷",
+                symbols = {
+                    spinner = { "", "", "", "", "", "" },
+                    done = "󰦕",
+                    separator = ",",
+                },
+            },
+            { "filetype", icon_only = true },
+        },
+        lualine_z = { { "branch", icon = "󰘬" } },
     },
 })
