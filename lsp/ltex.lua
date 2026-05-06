@@ -1,12 +1,12 @@
 local language_id_mapping = {
-    bib = "bibtex",
     tex = "latex",
     text = "plaintext",
 }
 
 return {
     cmd = { "ltex-ls-plus" },
-    filetypes = { "bib", "markdown", "tex", "text", "quarto" },
+    filetypes = { "markdown", "tex", "text" },
+    root_markers = { ".git" },
     get_language_id = function(_, filetype)
         return language_id_mapping[filetype] or filetype
     end,
