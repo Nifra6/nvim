@@ -8,6 +8,7 @@ require("mason-tool-installer").setup({
     ensure_installed = {
         "bash-language-server", -- Bash LSP
         "bibtex-tidy", -- BibTeX formatter
+        "css-lsp", -- CSS LSP
         "debugpy", -- Python DAP
         "gitlab-ci-ls", -- Gitlab CI LSP
         "latexindent", -- LaTeX formatter

@@ -1,6 +1,7 @@
 -- NOTE: Load LSP list
 local lsp_configs = {
     "bashls", -- Bash LSP
+    "cssls", -- CSS LSP
     "gitlab_ci_ls", -- GitLab CI plugin for yamlls
     "ltex", -- Grammar, style & spell checker
     "luals", -- Lua LSP
