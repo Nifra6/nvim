@@ -10,12 +10,11 @@ require("mason-tool-installer").setup({
         "bibtex-tidy", -- BibTeX formatter
         "debugpy", -- Python DAP
         "gitlab-ci-ls", -- Gitlab CI LSP
-        -- "harper-ls", -- English grammar checker
         "latexindent", -- LaTeX formatter
-        "ltex-ls-plus", -- Grammar, style & spell checker
+        "ltex-ls-plus", -- Grammar, style & spell checker LSP
         "lua-language-server", -- Lua LSP
         "prettier", -- Many languages formatter
-        "ruff", -- Python formatter + linter
+        "ruff", -- Python formatter + linter LSP
         "shellcheck", -- Bash linter
         "shfmt", -- Bash formatter
         "stylua", -- Lua formatter

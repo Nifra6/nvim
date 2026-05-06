@@ -2,7 +2,6 @@
 local lsp_configs = {
     "bashls", -- Bash LSP
     "gitlab_ci_ls", -- GitLab CI plugin for yamlls
-    -- "harper", -- English grammar checker
     "ltex", -- Grammar, style & spell checker
     "luals", -- Lua LSP
     "ruff", -- Python formatter + linter
