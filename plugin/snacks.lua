@@ -49,7 +49,10 @@ require("snacks").setup({
                     icon = "󰒓 ",
                     key = "c",
                     desc = "Configure Vim",
-                    action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})",
+                    action = function()
+                        vim.cmd("cd " .. vim.fn.stdpath("config"))
+                        Snacks.dashboard.pick("files", { cwd = vim.fn.stdpath("config") })
+                    end,
                 },
                 { icon = "󰈆 ", key = "q", desc = "Quit Vim", action = ":qa" },
             },
