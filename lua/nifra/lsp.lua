@@ -6,6 +6,7 @@ local lsp_configs = {
     "ltex", -- Grammar, style & spell checker
     "luals", -- Lua LSP
     "ruff", -- Python formatter + linter
+    "superhtml", -- HTML LSP
     "tombi", -- TOML LSP
     "ty", -- Python type checker + LSP
     "yamlls", -- YAML LSP

@@ -19,6 +19,7 @@ require("mason-tool-installer").setup({
         "shellcheck", -- Bash linter
         "shfmt", -- Bash formatter
         "stylua", -- Lua formatter
+        "superhtml", -- HTML LSP
         "tombi", -- TOML LSP
         "ty", -- Python type checker + LSP
         "yaml-language-server", -- YAML LSP

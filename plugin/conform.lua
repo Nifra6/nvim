@@ -6,7 +6,7 @@ require("conform").setup({
         bash = { "shfmt" },
         bib = { "bibtex-tidy" },
         css = { "prettier" },
-        html = { "prettier" },
+        html = { "superhtml" },
         json = { "prettier" },
         jsonc = { "prettier" },
         lua = { "stylua" },
