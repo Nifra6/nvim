@@ -9,6 +9,19 @@
     "body": ["${1:path} = Path(${1})"],
     "description": "Ensure a path is in pathlib."
   },
+  "dump_json_dict": {
+    "prefix": "dumpjson",
+    "body": [
+      "with open(${1:json_file}, \"w\") as f:",
+      "    json.dump(${2:data}, f)"
+    ],
+    "description": "Dump a dict to a JSON file."
+  },
+  "load_json_dict": {
+    "prefix": "loadjson",
+    "body": ["with open(${1:json_file}) as f:", "    ${2:data} = json.load(f)"],
+    "description": "Load a dict from a JSON file."
+  },
   "section": {
     "prefix": "section",
     "body": [
