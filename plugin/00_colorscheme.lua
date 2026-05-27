@@ -20,16 +20,36 @@ local function get_kitty_theme()
     return nil
 end
 
--- Get local kitten theme
-local kitty_theme = get_kitty_theme()
-local theme_is_tokyonight = kitty_theme == "Tokyo Night Day" or kitty_theme == "Tokyo Nifra Day"
-local theme_is_catppuccin = kitty_theme == "Catppuccin-Latte"
+local function get_ghostty_theme()
+    local handle = io.popen("ghostty +show-config 2>/dev/null | grep '^theme'")
+    if not handle then
+        return nil
+    end
+    local result = handle:read("*l")
+    handle:close()
+    return result and result:match("^theme%s*=%s*(.+)")
+end
 
-require("tokyonight").setup({
-    transparent = theme_is_tokyonight,
-})
+local function get_terminal_emulator_theme()
+    local term = os.getenv("TERM_PROGRAM")
+    local result = nil
+    if term == "ghostty" then
+        result = get_ghostty_theme()
+    elseif term == "kitty" then
+        result = get_kitty_theme()
+    end
+    if result == "TokyoNight Day" or result == "Tokyo Night Day" then
+        return "TokyoNight Day"
+    end
+    if result == "Catppuccin Latte" or result == "Catppuccin-Latte" then
+        return "Catppuccin Latte"
+    end
+end
+
+local te_theme = get_terminal_emulator_theme()
+
 require("catppuccin").setup({
-    transparent_background = theme_is_catppuccin,
+    transparent_background = te_theme == "Catppuccin Latte",
     integrations = {
         markview = true,
         blink_cmp = true,
@@ -44,9 +64,13 @@ require("catppuccin").setup({
         which_key = true,
     },
 })
+require("tokyonight").setup({
+    transparent = te_theme == "TokyoNight Day",
+})
 vim.g.everforest_transparent_background = 0
 
-if theme_is_tokyonight then
+-- Fallback to catppuccin when theme can't be detected (SSH, unknown terminal, ...)
+if te_theme == "TokyoNight Day" then
     vim.cmd.colorscheme("tokyonight-day")
 else
     vim.cmd.colorscheme("catppuccin")
