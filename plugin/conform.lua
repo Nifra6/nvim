@@ -10,7 +10,7 @@ require("conform").setup({
         json = { "prettier" },
         jsonc = { "prettier" },
         lua = { "stylua" },
-        markdown = { "prettier" },
+        markdown = { "rumdl" },
         python = { "ruff_organize_imports", "ruff_format" },
         sh = { "shfmt" },
         tex = { "latexindent" },

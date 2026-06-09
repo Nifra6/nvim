@@ -15,6 +15,7 @@ require("mason-tool-installer").setup({
         "ltex-ls-plus", -- Grammar, style & spell checker LSP
         "lua-language-server", -- Lua LSP
         "prettier", -- Many languages formatter
+        "rumdl", -- Markdown LSP
         "ruff", -- Python formatter + linter LSP
         "shellcheck", -- Bash linter
         "shfmt", -- Bash formatter
