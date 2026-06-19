@@ -7,6 +7,7 @@ local lsp_configs = {
     "luals", -- Lua LSP
     "ruff", -- Python formatter + linter
     "rumdl", -- Markdown LSP
+    "sshls", -- SSH config LSP
     "superhtml", -- HTML LSP
     "tombi", -- TOML LSP
     "ty", -- Python type checker + LSP
