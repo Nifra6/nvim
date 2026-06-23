@@ -10,9 +10,11 @@ require("blink.cmp").setup({
         ["<Enter>"] = { "accept", "fallback" },
         ["<Tab>"] = { "select_next", "fallback" },
         ["<S-Tab>"] = { "select_prev", "fallback" },
+        ["<C-p>"] = { "snippet_backward", "fallback_to_mappings" },
+        ["<C-n>"] = { "snippet_forward", "fallback_to_mappings" },
     },
     completion = {
-        trigger = { show_in_snippet = false },
+        trigger = { show_in_snippet = true },
         documentation = {
             auto_show = true,
             auto_show_delay_ms = 500,
