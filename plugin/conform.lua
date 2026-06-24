@@ -12,6 +12,7 @@ require("conform").setup({
         lua = { "stylua" },
         markdown = { "rumdl" },
         python = { "ruff_organize_imports", "ruff_format" },
+        quarto = { "injected" },
         sh = { "shfmt" },
         tex = { "latexindent" },
         toml = { "tombi" },
