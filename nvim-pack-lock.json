@@ -55,8 +55,9 @@
       "src": "https://github.com/folke/lazydev.nvim"
     },
     "ltex_extra.nvim": {
-      "rev": "49ea83c231139d98b7c9668c99e7b4591421b056",
-      "src": "https://github.com/barreiroleo/ltex_extra.nvim"
+      "rev": "7b2d27828308aacf30bff94e63cc8f8eb6c85de2",
+      "src": "https://github.com/barreiroleo/ltex_extra.nvim",
+      "version": "'dev'"
     },
     "lualine.nvim": {
       "rev": "221ce6b2d999187044529f49da6554a92f740a96",

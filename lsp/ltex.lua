@@ -11,9 +11,4 @@ return {
         return language_id_mapping[filetype] or filetype
     end,
     settings = { ltex = { language = "auto", checkFrequency = "save" } },
-    on_attach = function(client, _)
-        require("ltex_extra").setup({
-            load_langs = { "fr-FR", "en-US" },
-        })
-    end,
 }
