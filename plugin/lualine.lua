@@ -40,7 +40,11 @@ require("lualine").setup({
             "diff",
             { "diagnostics", symbols = { error = "󰅙 ", warn = "󱠇 ", info = "󰋼 ", hint = "󰸥 " } },
         },
-        lualine_x = { "location", "progress" },
+        lualine_x = {
+            "location",
+            "progress",
+            require("real-icons.integrations.lualine").component, -- BUG: Background does not coincide with a/z or b/y sections
+        },
         lualine_y = {
             {
                 "lsp_status",
@@ -51,8 +55,7 @@ require("lualine").setup({
                     separator = ",",
                 },
             },
-            -- require("real-icons.integrations.lualine").component, -- BUG: Background does not coincide with its section
-            { "filetype", icon_only = true },
+            -- { "filetype", icon_only = true }, -- Disabled in favor of real-icons.nvim
         },
         lualine_z = { { "branch", icon = "󰘬" } },
     },
