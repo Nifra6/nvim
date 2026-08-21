@@ -120,6 +120,10 @@
       "rev": "17f1e5d664bc615478230dc0240666329efacf9b",
       "src": "https://github.com/quarto-dev/quarto-nvim"
     },
+    "real-icons.nvim": {
+      "rev": "51a91399326a3b8371ea78426807b957aa972fce",
+      "src": "https://github.com/Mirsmog/real-icons.nvim"
+    },
     "showkeys": {
       "rev": "cb0a50296f11f1e585acffba8c253b9e8afc1f84",
       "src": "https://github.com/nvzone/showkeys"

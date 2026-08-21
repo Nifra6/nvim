@@ -51,6 +51,7 @@ require("lualine").setup({
                     separator = ",",
                 },
             },
+            -- require("real-icons.integrations.lualine").component, -- BUG: Background does not coincide with its section
             { "filetype", icon_only = true },
         },
         lualine_z = { { "branch", icon = "󰘬" } },
