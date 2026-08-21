@@ -11,6 +11,12 @@ Clone the repository into your config directory:
 git clone git@gitlab.com:nifra/nvim.git ~/.config/nvim
 ```
 
+> [!IMPORTANT]
+> Currently, the configuration uses the Catppuccin icon pack, which needs to be installed manually.
+>
+> Download the [latest release](https://github.com/catppuccin/vscode-icons/releases/latest) as a `.vsix` file,
+> extract the `extension` directory from it, and place it as `icons/catppuccin` in your Neovim configuration.
+
 ## ✨ Structure
 
 Main options of my configuration are in `lua/nifra/` (which is loaded by `init.lua`). If you want to see how the theme (_e.g._ the colorscheme) is set up, see `plugin/00_colorscheme.lua`.
