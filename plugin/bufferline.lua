@@ -5,6 +5,7 @@ vim.pack.add({
 })
 
 require("bufferline").setup({
+    highlights = require("catppuccin.special.bufferline").get_theme(),
     options = {
         close_command = function(n)
             Snacks.bufdelete(n)
@@ -25,14 +26,6 @@ require("bufferline").setup({
         },
         separator_style = "slope",
     },
-})
-
-vim.api.nvim_create_autocmd("BufAdd", {
-    callback = function()
-        vim.schedule(function()
-            pcall(nvim_bufferline)
-        end)
-    end,
 })
 
 vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
