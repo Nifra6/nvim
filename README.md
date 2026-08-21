@@ -14,8 +14,7 @@ git clone git@gitlab.com:nifra/nvim.git ~/.config/nvim
 > [!IMPORTANT]
 > Currently, the configuration uses the Catppuccin icon pack, which needs to be installed manually.
 >
-> Download the [latest release](https://github.com/catppuccin/vscode-icons/releases/latest) as a `.vsix` file,
-> extract the `extension` directory from it, and place it as `icons/catppuccin` in your Neovim configuration.
+> Use the user-defined command `:InstallCatppuccinIcons`.
 
 ## ✨ Structure
 
