@@ -43,8 +43,8 @@ require("snacks").setup({
                     desc = "Grep Text",
                     action = ":lua Snacks.dashboard.pick('live_grep')",
                 },
-                { icon = "󰚰 ", key = "u", desc = "Update Plugins", action = ":lua vim.pack.update()" },
-                { icon = "󰏓 ", key = "m", desc = "Mason Tools", action = "<cmd>Mason<cr>" },
+                { icon = "󰏕 ", key = "u", desc = "Update Plugins", action = ":lua vim.pack.update()" },
+                { icon = "󱁤 ", key = "m", desc = "Mason Tools", action = "<cmd>Mason<cr>" },
                 {
                     icon = "󰒓 ",
                     key = "c",
