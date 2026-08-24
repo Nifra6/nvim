@@ -1,7 +1,10 @@
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
--- NOTE: Open Lazy
+-- NOTE: Plugins management
+map("n", "<leader>ls", function()
+    vim.pack.update(nil, { target = "lockfile" })
+end, { desc = "[S]ync with lockfile" })
 map("n", "<leader>lu", function()
     vim.pack.update()
 end, { desc = "[U]pdate plugins" })
@@ -19,8 +22,8 @@ map("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 -- map("n", "<down>", '<cmd>echo "󰳛  is j, you dummy!"<CR>', opts)
 
 -- NOTE: Learn default keymaps for commenting
-map("n", "<Leader>cc", '<cmd>echo "Use gcc you muppet!"<CR>')
-map("v", "<Leader>cc", '<cmd>echo "Use gc you buffoon!"<CR>')
+-- map("n", "<Leader>cc", '<cmd>echo "Use gcc you muppet!"<CR>')
+-- map("v", "<Leader>cc", '<cmd>echo "Use gc you buffoon!"<CR>')
 
 -- NOTE: Clear highlight in normal mode
 map("n", "<Esc>", "<cmd>nohlsearch<CR>", opts)
