@@ -5,10 +5,10 @@ require("conform").setup({
     formatters_by_ft = {
         bash = { "shfmt" },
         bib = { "bibtex-tidy" },
-        css = { "prettier" },
+        css = { "prettierd" },
         html = { "superhtml" },
-        json = { "prettier" },
-        jsonc = { "prettier" },
+        json = { "prettierd" },
+        jsonc = { "prettierd" },
         lua = { "stylua" },
         markdown = { "rumdl" },
         python = { "ruff_organize_imports", "ruff_format" },
