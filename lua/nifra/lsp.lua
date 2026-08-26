@@ -2,9 +2,10 @@
 local lsp_configs = {
     "bashls", -- Bash LSP
     "cssls", -- CSS LSP
+    "emmylua_ls", -- Lua LSP
     "gitlab_ci_ls", -- GitLab CI plugin for yamlls
     "ltex", -- Grammar, style & spell checker
-    "luals", -- Lua LSP
+    -- "luals", -- Lua LSP
     "ruff", -- Python formatter + linter
     "rumdl", -- Markdown LSP
     "sshls", -- SSH config LSP
