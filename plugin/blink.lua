@@ -2,6 +2,7 @@ vim.pack.add({
     { src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*") },
     "https://github.com/rafamadriz/friendly-snippets",
     "https://github.com/jmbuhr/cmp-pandoc-references",
+    "https://git.barrettruth.com/barrettruth/blink-cmp-ghostty",
 })
 
 require("blink.cmp").setup({
@@ -23,6 +24,7 @@ require("blink.cmp").setup({
     sources = {
         default = { "lsp", "path", "snippets", "buffer" },
         per_filetype = {
+            ghostty = { "ghostty" },
             python = { "lsp", "snippets" },
             quarto = { "lsp", "path", "references" },
             tex = { "omni", "snippets" }, -- VimTeX completion is in omni
@@ -31,6 +33,10 @@ require("blink.cmp").setup({
             references = {
                 name = "pandoc_references",
                 module = "cmp-pandoc-references.blink",
+            },
+            ghostty = {
+                name = "Ghostty",
+                module = "blink-cmp-ghostty",
             },
         },
     },

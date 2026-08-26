@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "blink-cmp-ghostty": {
+      "rev": "2c74f96787956c64922a1d6cca76fc502db16bb4",
+      "src": "https://git.barrettruth.com/barrettruth/blink-cmp-ghostty"
+    },
     "blink.cmp": {
       "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp",
