@@ -1,11 +1,10 @@
--- NOTE: Load LSP list
+-- Enabled LSP configs
 local lsp_configs = {
     "bashls", -- Bash LSP
     "cssls", -- CSS LSP
     "emmylua_ls", -- Lua LSP
     "gitlab_ci_ls", -- GitLab CI plugin for yamlls
     "ltex", -- Grammar, style & spell checker
-    -- "luals", -- Lua LSP
     "ruff", -- Python formatter + linter
     "rumdl", -- Markdown LSP
     "sshls", -- SSH config LSP
@@ -15,7 +14,7 @@ local lsp_configs = {
     "yamlls", -- YAML LSP
 }
 
--- NOTE: LSP enabling
-for _, name in ipairs(lsp_configs) do
+-- Enable specified LS
+for _, name in pairs(lsp_configs) do
     vim.lsp.enable(name)
 end
