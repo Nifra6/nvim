@@ -1,4 +1,3 @@
--- NOTE: Diagnostic config
 vim.diagnostic.config({
     signs = {
         text = {
