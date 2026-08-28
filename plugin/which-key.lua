@@ -6,6 +6,7 @@ require("which-key").setup({
     sort = { "alphanum", "group" },
     plugins = { spelling = { enabled = false } },
     spec = {
+        { "gO", icon = " " },
         { "gra", desc = "Code [A]ctions", icon = "󱐋 " },
         { "grd", icon = " " },
         { "grn", desc = "Re[N]ame symbol", icon = "󰑕 " },
