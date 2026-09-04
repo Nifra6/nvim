@@ -3,6 +3,8 @@ vim.pack.add({ "https://github.com/stevearc/conform.nvim" })
 require("conform").setup({
     format_on_save = { lsp_format = "fallback", timeout_ms = 500 },
     formatters_by_ft = {
+        c = { lsp_format = "prefer" },
+        cpp = { lsp_format = "prefer" },
         bash = { "shfmt" },
         bib = { "bibtex-tidy" },
         css = { "prettierd" },

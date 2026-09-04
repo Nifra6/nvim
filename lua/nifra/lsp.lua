@@ -1,6 +1,7 @@
 -- Enabled LSP configs
 local lsp_configs = {
     "bashls", -- Bash LSP
+    "clangd", -- C/C++ LSP
     "cssls", -- CSS LSP
     "emmylua_ls", -- Lua LSP
     "gitlab_ci_ls", -- GitLab CI plugin for yamlls
