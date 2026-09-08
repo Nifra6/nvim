@@ -24,6 +24,8 @@ require("blink.cmp").setup({
     sources = {
         default = { "lsp", "path", "snippets", "buffer" },
         per_filetype = {
+            c = { "lsp", "snippets" },
+            cpp = { "lsp", "snippets" },
             ghostty = { "ghostty" },
             python = { "lsp", "snippets" },
             quarto = { "lsp", "path", "references" },
