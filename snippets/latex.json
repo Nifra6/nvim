@@ -29,6 +29,16 @@
     "body": ["\\textit{et al.}"],
     "description": "Insert an italicized 'et al.'."
   },
+  "abreviation_cad": {
+    "prefix": "cad",
+    "body": ["c.-à-d."],
+    "description": "Insère \"c'est à dire\" en abrégé."
+  },
+  "abreviation_pex": {
+    "prefix": "pex",
+    "body": ["p. ex."],
+    "description": "Insère \"par exemple\" en abrégé."
+  },
   "italicized_ie": {
     "prefix": "ie",
     "body": ["\\textit{i.e.}"],
