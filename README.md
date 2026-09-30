@@ -16,6 +16,10 @@ git clone git@gitlab.com:nifra/nvim.git ~/.config/nvim
 >
 > Use the user-defined command `:InstallCatppuccinIcons`.
 
+After the cloning, launch Neovim and accept plugins installation. You may need additional dependencies, execute `:checkhealth` to see if a plugin have major issues (for example, Mason may need **npm** or other package managers).
+
+For LaTeX, I use [VimTex](https://github.com/lervag/vimtex), with configured LaTeX compiler **latexmk** and PDF viewer **zathura**.
+
 ## ✨ Structure
 
 Main options of my configuration are in `lua/nifra/` (which is loaded by `init.lua`). If you want to see how the theme (_e.g._ the colorscheme) is set up, see `plugin/00_colorscheme.lua`.
